@@ -1,2 +1,2 @@
-1-compiler
-The C file name will be saved in the variable $CFILE
+2-assembler
+	The command will generates the assembly code of a C code and save it in an output
