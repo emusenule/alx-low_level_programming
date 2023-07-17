@@ -15,20 +15,14 @@ int main(void)
 	while (i < 10)
 	{
 		putchar(i + '0');
+		if (i < 9)
+		{
+			putchar(44);
+			putchar(32);
+		}
+		i++;
 	}
-	if (i < 9)
-	{
-		putchar(44);
-	}
-	else
-	{
-		putchar(32);
-	}
- 		i++;
-	}
-	if ( 9 > i)
-	{
-		putchar('\n');
-	}
+	putchar('\n');
+
 	return (0);
 }
