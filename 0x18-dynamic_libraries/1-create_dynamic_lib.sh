@@ -4,7 +4,7 @@
 c_files=$(find . -maxdepth 1 -type f -name "*.c")
 
 # Compile the .c files into object files
-gcc -c -fPIC $c_files
+gcc -c -Wall -Werror -fpic $c_files
 
 # Create the dynamic library
 gcc -shared -o liball.so *.o
