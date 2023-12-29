@@ -7,11 +7,11 @@
  * @h: head of the list
  * Return: the number of nodes
  */
-size_t dlistint_len(const dlist_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	int count;
 
-	coint = 0;
+	count = 0;
 
 	if (h == NULL)
 		return (count);
@@ -25,5 +25,5 @@ size_t dlistint_len(const dlist_t *h)
 		h = h->next;
 	}
 
-	return (count)
+	return (count);
 }
